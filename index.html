@@ -23,25 +23,32 @@ h1{font-size:clamp(34px,5vw,54px);margin:12px 0 20px}
 h2{font-size:28px;margin-top:0}
 h3{font-size:20px}
 p{margin:0 0 18px}
-.button,
-.card a.button {
+
+a.button,
+a.button:link,
+a.button:visited,
+a.button:hover,
+a.button:focus,
+a.button:active {
   display: inline-block;
   margin-top: 12px;
   padding: 12px 22px;
+  border: 2px solid #965943;
   border-radius: 4px;
-  background: #965943;
-  color: #FFFFFF;
+  background-color: #965943;
+  color: #FFFFFF !important;
   text-decoration: none;
   font-weight: bold;
+  opacity: 1;
+  -webkit-text-fill-color: #FFFFFF;
 }
 
-.button:hover,
-.button:focus,
-.card a.button:hover,
-.card a.button:focus {
-  background: #7D4835;
-  color: #FFFFFF;
+a.button:hover,
+a.button:focus {
+  background-color: #7D4835;
+  border-color: #7D4835;
 }
+
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin:28px 0}
 .card{background:var(--white);border:1px solid var(--border);border-radius:6px;padding:24px}
 .card h3{margin-top:0}
