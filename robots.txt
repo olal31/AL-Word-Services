@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://olal31.github.io/AL-Word-Services/sitemap.xml
